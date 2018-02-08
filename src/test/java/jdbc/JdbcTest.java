@@ -20,7 +20,7 @@ public class JdbcTest {
 		Statement statement = conn.createStatement();
 		ResultSet result = statement.executeQuery("select count(*) from o_order_3pl");
 		while (result.next()) {
-			System.out.println(result.getInt(1));
+			System.out.println(result.getInt(2));
 		}
 	}
 
